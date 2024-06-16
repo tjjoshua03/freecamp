@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>School life Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">School life Survey Form</h1>
+        <p id="description" class="description text-center">Thank you for taking the time for to help us</p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input id="email" type="email" name="email" class="form-control" placeholder="Enter your email" required/>
+        </div>
+
+        <div class="form-group">
+          <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="120"
+            class="form-control"
+            placeholder="Age">
+        </div>
+
+        <div class="form-group">
+          <p>Which Subject was your favorite in High school?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select Subject</option>
+            <option value="math">Math</option>
+            <option value="spanish">Spanish</option>
+            <option value="science">Science</option>
+            <option value="secondLanguage">Second Language</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <p>Are you good at stuying?</p>
+          <label>
+            <input
+              name="rating"
+              value="high"
+              type="radio"
+              class="input-radio"
+              checked
+            />High
+          </label>
+          <label>
+            <input
+              name="rating"
+              value="middle"
+              type="radio"
+              class="input-radio"
+            />Middle
+          </label>
+
+          <label>
+            <input
+              name="rating"
+              value="no"
+              type="radio"
+              class="input-radio"
+              />No
+          </label>
+        </div>
+        <div class="form-group">
+          <p>
+            What was the hard point of School life
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="friendship"
+              type="checkbox"
+              class="input-checkbox"
+            />Friendship</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="studying"
+              type="checkbox"
+              class="input-checkbox"
+            />Studying</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="after-school"
+              type="checkbox"
+              class="input-checkbox"
+            />After School</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="relationship-with-teacher"
+              type="checkbox"
+              class="input-checkbox"
+            />Relationship With Teacher</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="grade"
+              type="checkbox"
+              class="input-checkbox"
+            />Grade</label
+          >
+         </div>
+         
+         <div class="form-group">
+          <p>Any comments</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>  
